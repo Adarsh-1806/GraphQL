@@ -1,0 +1,12 @@
+type WithdrawToken @entity {
+  id: ID!
+  _from: Bytes! # address
+  _to: Bytes! # address
+  _amount: BigInt! # amount
+}
+type LockToken @entity {
+  id: ID!
+  _from: Bytes! # address
+  _to: Bytes! # address
+  _amount: BigInt!
+}
